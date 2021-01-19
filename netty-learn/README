@@ -1,0 +1,6 @@
+To run it
+Make sure you set your Java folder path in the executable of the exec-maven-plugin
+Server
+mvn exec:exec "-Dexec.args=-classpath %classpath -Xlog:gc* example.project.server.EchoServer 9000"
+Client
+mvn exec:exec "-Dexec.args=-classpath %classpath -Xlog:gc* example.project.client.EchoClient localhost 9000"
